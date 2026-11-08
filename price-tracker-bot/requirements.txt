@@ -1,0 +1,5 @@
+aiogram>=3.13,<4
+aiohttp>=3.9
+beautifulsoup4>=4.12
+lxml>=5.0
+python-dotenv>=1.0

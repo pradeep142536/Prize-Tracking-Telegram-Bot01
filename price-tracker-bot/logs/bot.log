@@ -1,0 +1,239 @@
+2026-11-05 20:46:39,102 INFO bot.app: Health server listening on 0.0.0.0:10000
+2026-11-05 20:46:39,933 INFO bot.app: Bot started
+2026-11-05 20:46:39,933 INFO aiogram.dispatcher: Start polling
+2026-11-05 20:46:40,135 INFO aiogram.dispatcher: Run polling for bot @prizetrackingbot id=8908371023 - 'Prize Tracking Bot'
+2026-11-05 20:46:41,344 INFO aiogram.event: Update id=507391732 is handled. Duration 1000 ms by bot id=8908371023
+2026-11-05 20:47:11,699 INFO aiogram.event: Update id=507391733 is handled. Duration 436 ms by bot id=8908371023
+2026-11-05 20:47:24,809 INFO aiogram.event: Update id=507391734 is handled. Duration 389 ms by bot id=8908371023
+2026-11-05 20:48:22,191 INFO aiogram.event: Update id=507391735 is handled. Duration 6391 ms by bot id=8908371023
+2026-11-05 20:48:35,306 INFO aiogram.event: Update id=507391736 is handled. Duration 436 ms by bot id=8908371023
+2026-11-05 20:48:50,862 INFO aiogram.event: Update id=507391737 is handled. Duration 438 ms by bot id=8908371023
+2026-11-05 20:49:13,941 INFO aiogram.event: Update id=507391738 is handled. Duration 530 ms by bot id=8908371023
+2026-11-05 20:49:25,704 INFO aiogram.event: Update id=507391739 is handled. Duration 438 ms by bot id=8908371023
+2026-11-05 20:55:15,672 INFO bot.app: Health server listening on 0.0.0.0:10000
+2026-11-05 20:55:16,446 INFO bot.app: Bot started
+2026-11-05 20:55:16,446 INFO aiogram.dispatcher: Start polling
+2026-11-05 20:55:16,635 INFO aiogram.dispatcher: Run polling for bot @prizetrackingbot id=8908371023 - 'Prize Tracking Bot'
+2026-11-05 20:55:52,762 INFO aiogram.event: Update id=507391741 is handled. Duration 782 ms by bot id=8908371023
+2026-11-05 20:55:56,087 INFO aiogram.event: Update id=507391740 is not handled. Duration 21327 ms by bot id=8908371023
+2026-11-05 20:55:56,088 ERROR aiogram.event: Cause exception while process update id=507391740 by bot id=8908371023
+TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1301, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 124, in start_connection
+    raise first_exception
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 75, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 210, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 729, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 803, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 599, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] The semaphore timeout period has expired
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 167, in make_request
+    async with session.post(
+               ^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1683, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 856, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 810, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 657, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1242, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1620, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1589, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1324, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 193, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 165, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 157, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 185, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\Downloads\price-tracker-bot\bot\handlers.py", line 205, in cmd_list
+    await message.answer(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\methods\base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 509, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 176, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}") from e
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+2026-11-05 20:56:01,147 INFO aiogram.event: Update id=507391742 is handled. Duration 405 ms by bot id=8908371023
+2026-11-05 20:56:24,938 INFO aiogram.event: Update id=507391743 is handled. Duration 766 ms by bot id=8908371023
+2026-11-05 20:56:27,526 INFO aiogram.event: Update id=507391744 is handled. Duration 389 ms by bot id=8908371023
+2026-11-05 20:56:30,829 INFO aiogram.event: Update id=507391745 is handled. Duration 407 ms by bot id=8908371023
+2026-11-05 20:56:53,858 INFO aiogram.event: Update id=507391746 is handled. Duration 7250 ms by bot id=8908371023
+2026-11-05 20:57:00,422 INFO aiogram.event: Update id=507391747 is handled. Duration 420 ms by bot id=8908371023
+2026-11-05 20:59:00,530 INFO aiogram.event: Update id=507391748 is handled. Duration 422 ms by bot id=8908371023
+2026-11-05 20:59:07,090 INFO aiogram.event: Update id=507391749 is handled. Duration 766 ms by bot id=8908371023
+2026-11-05 20:59:14,718 INFO aiogram.event: Update id=507391750 is handled. Duration 764 ms by bot id=8908371023
+2026-11-05 20:59:21,515 INFO aiogram.event: Update id=507391751 is handled. Duration 422 ms by bot id=8908371023
+2026-11-05 20:59:29,801 INFO aiogram.event: Update id=507391752 is handled. Duration 500 ms by bot id=8908371023
+2026-11-05 22:28:17,164 INFO bot.app: Health server listening on 0.0.0.0:10000
+2026-11-05 22:28:18,227 INFO bot.app: Bot started
+2026-11-05 22:28:18,228 INFO aiogram.dispatcher: Start polling
+2026-11-05 22:28:19,704 INFO aiogram.dispatcher: Run polling for bot @prizetrackingbot id=8908371023 - 'Prize Tracking Bot'
+2026-11-05 22:28:37,998 INFO aiogram.event: Update id=507391753 is handled. Duration 797 ms by bot id=8908371023
+2026-11-05 22:28:58,720 INFO aiogram.event: Update id=507391754 is handled. Duration 1311 ms by bot id=8908371023
+2026-11-05 22:29:06,457 INFO aiogram.event: Update id=507391755 is handled. Duration 781 ms by bot id=8908371023
+2026-11-05 22:29:31,607 INFO aiogram.event: Update id=507391756 is handled. Duration 734 ms by bot id=8908371023
+2026-11-05 22:29:35,414 INFO aiogram.event: Update id=507391757 is handled. Duration 750 ms by bot id=8908371023
+2026-11-05 22:29:39,094 INFO aiogram.event: Update id=507391758 is handled. Duration 750 ms by bot id=8908371023
+2026-11-05 22:29:40,678 INFO aiogram.event: Update id=507391759 is handled. Duration 811 ms by bot id=8908371023
+2026-11-05 22:29:44,142 INFO aiogram.event: Update id=507391760 is handled. Duration 843 ms by bot id=8908371023
+2026-11-05 22:30:03,980 INFO aiogram.event: Update id=507391761 is handled. Duration 828 ms by bot id=8908371023
+2026-11-05 22:30:18,049 INFO aiogram.event: Update id=507391762 is handled. Duration 2000 ms by bot id=8908371023
+2026-11-05 22:30:22,210 INFO aiogram.event: Update id=507391763 is handled. Duration 890 ms by bot id=8908371023
+2026-11-05 22:30:26,705 INFO aiogram.event: Update id=507391764 is handled. Duration 734 ms by bot id=8908371023
+2026-11-05 22:30:29,544 INFO aiogram.event: Update id=507391765 is handled. Duration 766 ms by bot id=8908371023
+2026-11-05 22:30:34,165 INFO aiogram.event: Update id=507391766 is handled. Duration 781 ms by bot id=8908371023
+2026-11-05 22:31:34,973 INFO aiogram.event: Update id=507391767 is handled. Duration 734 ms by bot id=8908371023
+2026-11-05 22:31:40,390 INFO aiogram.event: Update id=507391768 is handled. Duration 750 ms by bot id=8908371023
+2026-11-05 22:31:49,186 INFO aiogram.event: Update id=507391769 is handled. Duration 734 ms by bot id=8908371023
+2026-11-05 22:31:52,577 INFO aiogram.event: Update id=507391770 is handled. Duration 750 ms by bot id=8908371023
+2026-11-05 22:32:03,935 INFO aiogram.event: Update id=507391771 is handled. Duration 765 ms by bot id=8908371023
+2026-11-05 22:32:06,779 INFO aiogram.event: Update id=507391772 is handled. Duration 733 ms by bot id=8908371023
+2026-11-06 21:08:04,650 INFO bot.app: Health server listening on 0.0.0.0:10000
+2026-11-06 21:08:05,700 INFO bot.app: Bot started
+2026-11-06 21:08:05,744 INFO aiogram.dispatcher: Start polling
+2026-11-06 21:08:05,948 INFO aiogram.dispatcher: Run polling for bot @prizetrackingbot id=8908371023 - 'Prize Tracking Bot'
+2026-11-06 21:11:05,176 INFO aiogram.event: Update id=507391773 is handled. Duration 827 ms by bot id=8908371023
+2026-11-06 21:11:17,731 INFO aiogram.event: Update id=507391774 is handled. Duration 1047 ms by bot id=8908371023
+2026-11-06 21:11:29,240 INFO aiogram.event: Update id=507391775 is handled. Duration 938 ms by bot id=8908371023
+2026-11-06 21:11:35,055 INFO aiogram.event: Update id=507391776 is handled. Duration 795 ms by bot id=8908371023
+2026-11-06 21:11:46,516 INFO aiogram.event: Update id=507391777 is handled. Duration 797 ms by bot id=8908371023
+2026-11-06 21:11:51,834 INFO aiogram.event: Update id=507391778 is handled. Duration 1500 ms by bot id=8908371023
+2026-11-06 21:11:54,543 INFO aiogram.event: Update id=507391779 is handled. Duration 875 ms by bot id=8908371023
+2026-11-06 21:11:59,769 INFO aiogram.event: Update id=507391780 is handled. Duration 889 ms by bot id=8908371023
+2026-11-06 21:12:11,418 INFO aiogram.event: Update id=507391781 is handled. Duration 735 ms by bot id=8908371023
+2026-11-06 21:16:14,442 INFO aiogram.event: Update id=507391782 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:16:16,653 INFO aiogram.event: Update id=507391783 is handled. Duration 405 ms by bot id=8908371023
+2026-11-06 21:16:21,888 INFO aiogram.event: Update id=507391784 is handled. Duration 765 ms by bot id=8908371023
+2026-11-06 21:16:26,899 INFO aiogram.event: Update id=507391785 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:16:29,152 INFO aiogram.event: Update id=507391786 is handled. Duration 890 ms by bot id=8908371023
+2026-11-06 21:16:31,541 INFO aiogram.event: Update id=507391787 is handled. Duration 796 ms by bot id=8908371023
+2026-11-06 21:16:33,353 INFO aiogram.event: Update id=507391788 is handled. Duration 858 ms by bot id=8908371023
+2026-11-06 21:20:28,594 INFO aiogram.event: Update id=507391789 is handled. Duration 796 ms by bot id=8908371023
+2026-11-06 21:20:34,803 INFO aiogram.event: Update id=507391790 is handled. Duration 765 ms by bot id=8908371023
+2026-11-06 21:20:56,795 INFO aiogram.event: Update id=507391791 is handled. Duration 796 ms by bot id=8908371023
+2026-11-06 21:21:00,851 INFO aiogram.event: Update id=507391792 is handled. Duration 389 ms by bot id=8908371023
+2026-11-06 21:21:09,014 INFO aiogram.event: Update id=507391793 is handled. Duration 780 ms by bot id=8908371023
+2026-11-06 21:22:11,756 INFO aiogram.event: Update id=507391794 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:22:28,970 INFO aiogram.event: Update id=507391795 is handled. Duration 764 ms by bot id=8908371023
+2026-11-06 21:22:34,980 INFO aiogram.event: Update id=507391796 is handled. Duration 796 ms by bot id=8908371023
+2026-11-06 21:22:38,151 INFO aiogram.event: Update id=507391797 is handled. Duration 359 ms by bot id=8908371023
+2026-11-06 21:23:39,668 INFO aiogram.event: Update id=507391798 is handled. Duration 438 ms by bot id=8908371023
+2026-11-06 21:23:45,639 INFO aiogram.event: Update id=507391799 is handled. Duration 811 ms by bot id=8908371023
+2026-11-06 21:23:56,892 INFO aiogram.event: Update id=507391800 is handled. Duration 811 ms by bot id=8908371023
+2026-11-06 21:23:59,333 INFO aiogram.event: Update id=507391801 is handled. Duration 766 ms by bot id=8908371023
+2026-11-06 21:24:12,842 INFO aiogram.event: Update id=507391802 is handled. Duration 780 ms by bot id=8908371023
+2026-11-06 21:24:19,631 INFO aiogram.event: Update id=507391803 is handled. Duration 813 ms by bot id=8908371023
+2026-11-06 21:24:25,465 INFO aiogram.event: Update id=507391804 is handled. Duration 766 ms by bot id=8908371023
+2026-11-06 21:24:30,286 INFO aiogram.event: Update id=507391805 is handled. Duration 938 ms by bot id=8908371023
+2026-11-06 21:28:13,540 INFO aiogram.event: Update id=507391806 is handled. Duration 405 ms by bot id=8908371023
+2026-11-06 21:28:16,731 INFO aiogram.event: Update id=507391807 is handled. Duration 764 ms by bot id=8908371023
+2026-11-06 21:28:20,956 INFO aiogram.event: Update id=507391808 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:28:23,282 INFO aiogram.event: Update id=507391809 is handled. Duration 859 ms by bot id=8908371023
+2026-11-06 21:28:25,920 INFO aiogram.event: Update id=507391810 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:28:27,377 INFO aiogram.event: Update id=507391811 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:28:33,778 INFO aiogram.event: Update id=507391812 is handled. Duration 734 ms by bot id=8908371023
+2026-11-06 21:28:35,777 INFO aiogram.event: Update id=507391813 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:28:38,943 INFO aiogram.event: Update id=507391814 is handled. Duration 780 ms by bot id=8908371023
+2026-11-06 21:49:33,123 INFO bot.app: Health server listening on 0.0.0.0:10000
+2026-11-06 21:49:35,340 INFO bot.app: Bot started
+2026-11-06 21:49:35,426 INFO aiogram.dispatcher: Start polling
+2026-11-06 21:49:37,488 INFO aiogram.dispatcher: Run polling for bot @prizetrackingbot id=8908371023 - 'Prize Tracking Bot'
+2026-11-06 21:50:36,208 INFO aiogram.event: Update id=507391815 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:50:38,903 INFO aiogram.event: Update id=507391816 is handled. Duration 734 ms by bot id=8908371023
+2026-11-06 21:50:41,207 INFO aiogram.event: Update id=507391817 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:50:43,047 INFO aiogram.event: Update id=507391818 is handled. Duration 734 ms by bot id=8908371023
+2026-11-06 21:50:51,469 INFO aiogram.event: Update id=507391819 is handled. Duration 842 ms by bot id=8908371023
+2026-11-06 21:51:00,819 INFO aiogram.event: Update id=507391820 is handled. Duration 5046 ms by bot id=8908371023
+2026-11-06 21:51:20,231 INFO aiogram.event: Update id=507391821 is handled. Duration 842 ms by bot id=8908371023
+2026-11-06 21:51:22,257 INFO aiogram.event: Update id=507391822 is handled. Duration 1282 ms by bot id=8908371023
+2026-11-06 21:51:24,289 INFO aiogram.event: Update id=507391823 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:51:25,720 INFO aiogram.event: Update id=507391824 is handled. Duration 780 ms by bot id=8908371023
+2026-11-06 21:51:28,829 INFO aiogram.event: Update id=507391825 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:51:34,203 INFO aiogram.event: Update id=507391826 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:51:37,996 INFO aiogram.event: Update id=507391827 is handled. Duration 797 ms by bot id=8908371023
+2026-11-06 21:51:40,971 INFO aiogram.event: Update id=507391828 is handled. Duration 358 ms by bot id=8908371023
+2026-11-06 21:51:43,879 INFO aiogram.event: Update id=507391829 is handled. Duration 782 ms by bot id=8908371023
+2026-11-06 21:51:46,984 INFO aiogram.event: Update id=507391830 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:51:50,370 INFO aiogram.event: Update id=507391831 is handled. Duration 750 ms by bot id=8908371023
+2026-11-06 21:51:54,809 INFO aiogram.event: Update id=507391832 is handled. Duration 750 ms by bot id=8908371023
